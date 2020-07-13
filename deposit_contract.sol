@@ -1,10 +1,10 @@
 // SPDX-License-Identifier: Apache-2.0
 
-pragma solidity 0.6.8;
+pragma solidity ^0.6.8;
 
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.1.0/contracts/token/ERC20/ERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.1.0/contracts/token/ERC20/IERC20.sol";
-import "https://github.com/OpenZeppelin/openzeppelin-contracts/blob/v3.1.0/contracts/token/ERC20/ERC20Burnable.sol";
+import "openzeppelin-contracts/token/ERC20/ERC20.sol";
+import "openzeppelin-contracts/token/ERC20/IERC20.sol";
+import "openzeppelin-contracts/token/ERC20/ERC20Burnable.sol";
 
 // =======================================     WARNING     ========================================
 //

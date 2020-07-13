@@ -21,7 +21,7 @@ Along with some other changes, strictly intended for testnets.
 
 To deploy (or use other [ethereal](https://github.com/wealdtech/ethereal/) account options):
 ```shell script
-ethereal contract deploy --network=goerli --data="$(cat bytecode.json | jq -r '.object' )" --from=$ETH1_FROM_ADDR --privatekey=$ETH1_FROM_PRIV
+ethereal contract deploy --network=goerli --name=DepositContract --json=deposit_contract.json --from=$ETH1_FROM_ADDR --privatekey=$ETH1_FROM_PRIV
 ```
 
 ## License
