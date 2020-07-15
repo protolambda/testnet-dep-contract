@@ -143,6 +143,9 @@ contract DepositContract is IDepositContract, ERC165, IERC20, ERC20, ERC20Burnab
         require(withdrawal_credentials.length == 32, "DepositContract: invalid withdrawal_credentials length");
         require(signature.length == 96, "DepositContract: invalid signature length");
 
+        // Send back any goerli value they try to send us (some deposit tooling does not allow to change the amount)
+        msg.sender.transfer(msg.value);
+
         // WARNING: disabled amount check.
         // // Check deposit amount
         // require(msg.value >= 1 ether, "DepositContract: deposit value too low");
